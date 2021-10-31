@@ -14,15 +14,16 @@ void main()
 	printf("is_upercase(ACSKLDFJSGSKLDFJSKLDFJ) = %s\n", is_uppercase("ACSKLDFJSGSKLDFJSKLDFJ") ? "true" : "false");
 }
 
+//This function checks if symbol is upercase
 int is_uppercase(char *str)
 {
-	int len = strlen(str);
+	int length = strlen(str);
 	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int upperLen = strlen(upper);
-	for (int x = 0; x < len; x++) 
+	int upperLength = strlen(upper);
+	for (int x = 0; x < length; x++) 
 	{
 		int a = 0;
-		for (int y = 0; y < upperLen; y++)
+		for (int y = 0; y < upperLength; y++)
 		{
 			if (str[x] == upper[y])
 			{
